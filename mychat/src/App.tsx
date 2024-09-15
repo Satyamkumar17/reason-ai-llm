@@ -15,7 +15,7 @@ function App() {
 
     try {
 
-      const res = await axios.post('http://127.0.0.1:5000/query', {
+      const res = await axios.post('http://127.0.0.1:5500/query', {
         query: query
       });
 

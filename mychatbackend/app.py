@@ -1,3 +1,7 @@
+import os
+
+api_key = os.getenv('GEMINI_API_KEY')
+
 from langchain_google_genai import ChatGoogleGenerativeAI
 
 from flask import Flask, request, jsonify  
@@ -15,9 +19,7 @@ llm = ChatGoogleGenerativeAI(
     max_tokens=None,
     timeout=None,
     max_retries=2,
- api_key="AIzaSyDnrtxmdIrr1S3QQ_dQ0M3fT0MliMbB9bg"
-
-   #api_key="AIzaSyDH4pqL-724-lFnf_hNDy7wuD2-HvsS40M"
+    api_key=api_key
    
 )
 
@@ -60,4 +62,4 @@ def handle_query():
 
 
 if __name__ == '__main__':
-    query_processor.run(debug=True)
+    query_processor.run(debug=True, host='0.0.0.0', port=5500)
