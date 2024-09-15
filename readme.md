@@ -15,7 +15,7 @@ A stateless Language Model (LLM) wrapper built with LangChain, designed to enhan
 
 ## Demo
 
-Insert gif or link to demo
+https://github.com/user-attachments/assets/fccb278e-ef46-4cee-a547-f6f7c9da4b07
 
 
 ## Tech Stack
