@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import axios, { AxiosError } from 'axios'; 
+import axios from 'axios'; 
 import './App.css';
 
 function App() {
@@ -14,7 +14,8 @@ function App() {
     setLoading(true);
 
     try {
-
+      //'http://127.0.0.1:5500/query' -> docker
+      // /query -> hugging face
       const res = await axios.post('http://127.0.0.1:5500/query', {
         query: query
       });

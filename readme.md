@@ -57,6 +57,10 @@ Install my-project with npm
 ## Deployment
 
 To deploy this project run
+Create a `.env` file in root folder with content
+```bash
+GEMINI_API_KEY=<YOUR-API-KEY>
+```
 
 Build the Images
 ```bash
